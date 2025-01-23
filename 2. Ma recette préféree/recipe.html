@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recette de Pâte à Crêpes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff8e1;
+            color: #4e342e;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffcc80;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #bf360c;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #bf360c;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ffe0b2;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        ol {
+            counter-reset: step;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        ol li:before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #ffab40;
+            color: white;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffcc80;
+            color: #4e342e;
+            margin-top: 20px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pâte à Crêpes</h1>
+    </header>
+    <main>
+        <h2>Ingrédients</h2>
+        <ul>
+            <li>1 pincée de sel</li>
+            <li>2 verres de farine</li>
+            <li>3 œufs</li>
+            <li>4 verres de lait</li>
+            <li>2 sachets de sucre vanillé</li>
+        </ul>
+
+        <h2>Préparation</h2>
+        <ol>
+            <li>Mettre la farine, le sel, le sucre et les œufs dans un saladier.</li>
+            <li>Mixer le tout avec un robot ou un fouet.</li>
+            <li>Ajouter le lait progressivement jusqu'à obtenir une pâte homogène.</li>
+            <li>Dans une poêle chaude, verser une petite louche de pâte puis retourner au bout d'une minute.</li>
+        </ol>
+    </main>
+    <footer>
+        Bon appétit ! 🥞
+    </footer>
+</body>
+</html>

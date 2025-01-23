@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon site</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #main-menu {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: 15px;
+      }
+
+      #hero-section {
+        /* option 1  (better in this case) */
+        /* text-align: center */
+        
+        /* option 2 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #main-products-section {
+        text-align: center;
+      }
+
+      #products {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .product-card {
+        width: 320px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="main-title">
+        <img src="" alt="" />
+        <span>NOM DU SITE</span>
+      </div>
+
+      <nav id="main-nav">
+        <ul id="main-menu">
+          <li class="main-menu-item">Accueil</li>
+          <li class="main-menu-item">A propos</li>
+          <li class="main-menu-item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section">
+        <h1>Bienvenue</h1>
+        <p>Nous vous accueillons</p>
+        <button>Découvrir</button>
+      </section>
+      <section id="main-products-section">
+        <h2>Menu</h2>
+        <div id="products">
+          <article class="product-card">
+            <img src="" alt="" srcset="">
+            <p>Mon article</p>
+            <button>Commander</button>
+          </article>
+          <article class="product-card">
+            <img src="" alt="" srcset="">
+            <p>Mon article</p>
+            <button>Commander</button>
+          </article>
+          <article class="product-card">
+            <img src="" alt="" srcset="">
+            <p>Mon article</p>
+            <button>Commander</button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
