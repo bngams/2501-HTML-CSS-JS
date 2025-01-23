@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #fefaf6;
+        color: #4a4a4a;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #6b4f4f;
+        color: #fff;
+        padding: 15px 30px;
+      }
+
+      #main-title {
+        display: flex;
+        align-items: center;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      #main-title img {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      #main-menu {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+      }
+
+      .main-menu-item {
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: color 0.3s;
+      }
+
+      .main-menu-item:hover {
+        color: #ffcb69;
+      }
+
+      #hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #6b4f4f;
+        color: #f5e8dc;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(245, 232, 219, 1)), url('img/bg.jpg');
+        min-height: 300px;
+      }
+
+      #hero-section h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+      }
+
+      #hero-section p {
+        font-size: 1.2em;
+        margin: 0 0 20px;
+      }
+
+      #hero-section button {
+        background-color: #6b4f4f;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      #hero-section button:hover {
+        background-color: #ffcb69;
+      }
+
+      #main-products-section {
+        text-align: center;
+        padding: 50px 20px;
+      }
+
+      #main-products-section h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #6b4f4f;
+      }
+
+      #products {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .product-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .product-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      .product-card p {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+
+      .product-card button {
+        background-color: #6b4f4f;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .product-card button:hover {
+        background-color: #ffcb69;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #6b4f4f;
+        color: #fff;
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="main-title">
+        <img src="img/about.png" alt="Logo du site" />
+        <span>CoffeeShop</span>
+      </div>
+      <nav id="main-nav">
+        <ul id="main-menu">
+          <li class="main-menu-item">Accueil</li>
+          <li class="main-menu-item">À propos</li>
+          <li class="main-menu-item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section">
+        <h1>Bienvenue</h1>
+        <p>Nous vous accueillons</p>
+        <button>Découvrir</button>
+      </section>
+      <section id="main-products-section">
+        <h2>Notre Menu</h2>
+        <div id="products">
+          <article class="product-card">
+            <img src="img/menu-1.jpg" alt="Café Latte" />
+            <p>Café Latte</p>
+            <button>Commander</button>
+          </article>
+          <article class="product-card">
+            <img src="img/menu-2.jpg" alt="Cappuccino" />
+            <p>Cappuccino</p>
+            <button>Commander</button>
+          </article>
+          <article class="product-card">
+            <img src="img/menu-3.jpg" alt="Espresso" />
+            <p>Espresso</p>
+            <button>Commander</button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      © 2025 CoffeeShop - Tous droits réservés
+    </footer>
+  </body>
+</html>
