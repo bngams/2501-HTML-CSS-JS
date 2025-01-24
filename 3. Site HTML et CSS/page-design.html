@@ -54,66 +54,78 @@
         color: #ffcb69;
       }
 
+      .sub-menu {
+        display: none;
+        position: absolute;
+        background-color: rosybrown;
+        padding: 10px;
+        list-style-type: none;
+      }
+
+      .main-menu-item:hover .sub-menu {
+        display: block;
+      }
+
       #hero-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 100px 20px;
-  color: #fff;
-  overflow: hidden; /* Pour éviter tout dépassement du background */
-}
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 100px 20px;
+        color: #fff;
+        overflow: hidden; /* Pour éviter tout dépassement du background */
+      }
 
-#hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('img/bg.jpg') center/cover no-repeat;
-  opacity: 1; /* Contrôle l'opacité du fond */
-  z-index: -1; /* Place le fond derrière le contenu */
-}
+      #hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('img/bg.jpg') center/cover no-repeat;
+        opacity: 1; /* Contrôle l'opacité du fond */
+        z-index: -1; /* Place le fond derrière le contenu */
+      }
 
-#hero-section::after {
-  content: '';
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 100%;
-  height: 15px;
-  background: url(img/overlay-bottom.png) center / contain repeat-x;
-  z-index: 1; /* Ensures it's above the hero section's background */
-  pointer-events: none; /* Prevents it from interfering with clicks */
-}
+      #hero-section::after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        height: 15px;
+        background: url(img/overlay-bottom.png) center / contain repeat-x;
+        z-index: 1; /* Ensures it's above the hero section's background */
+        pointer-events: none; /* Prevents it from interfering with clicks */
+      }
 
-#hero-section h1 {
-  font-size: 3em;
-  margin: 0 0 10px;
-}
+      #hero-section h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+      }
 
-#hero-section p {
-  font-size: 1.2em;
-  margin: 0 0 20px;
-}
+      #hero-section p {
+        font-size: 1.2em;
+        margin: 0 0 20px;
+      }
 
-#hero-section button {
-  background-color: #ffcb69;
-  color: #6b4f4f;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+      #hero-section button {
+        background-color: #ffcb69;
+        color: #6b4f4f;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
 
-#hero-section button:hover {
-  background-color: #fff;
-  color: #6b4f4f;
-}
+      #hero-section button:hover {
+        background-color: #fff;
+        color: #6b4f4f;
+      }
 
       #main-products-section {
         text-align: center;
@@ -201,9 +213,16 @@
       </div>
       <nav id="main-nav">
         <ul id="main-menu">
-          <li class="main-menu-item">Accueil</li>
-          <li class="main-menu-item">À propos</li>
-          <li class="main-menu-item">Contact</li>
+          <li class="main-menu-item"><a href="page-design.html#hero-section">Accueil</a></li>
+          <li class="main-menu-item">
+            À propos
+            <ul class="sub-menu">
+              <li>Notre histoire</li>
+              <li>Notre équipe</li>
+              <li>...</li>
+            </ul>
+          </li>
+          <li class="main-menu-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -237,5 +256,32 @@
     <footer>
       © 2025 CoffeeShop - Tous droits réservés
     </footer>
+    <script>
+      // Ne plus utiliser
+      // var myOldVar = "Ma variable var";
+
+      // variables 
+      let myVar = "Ma première variable";
+      const myConst = "Ma première variable";
+
+      // structures de controles (boucles, conditions...)
+      if(myVar.length > 5) {
+        console.log("My var has a length > 5");
+      }
+
+      // functions
+      function sayHello(name) {
+        console.log("Hello " + name);
+      }
+      sayHello("Boris");
+
+      const anotherSayHello = (name) => {
+        console.log("Hello " + name);
+      }
+      anotherSayHello("Boris");
+
+      // POO
+
+    </script>
   </body>
 </html>
