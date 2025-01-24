@@ -6,7 +6,8 @@ const users = [
 
 document.addEventListener("DOMContentLoaded", () => {
   // TODO : Appeler la fonction populateTable
-  populateTable();
+  // populateTable();
+  fetchUsers();
 });
 
 function populateTable() {
@@ -29,3 +30,17 @@ function addRow(firstname, lastname, email) {
   emailCell.textContent = email;
 }
 
+async function fetchUsers() {
+  try {
+    const response = await fetch("https://dummyjson.com/users?limit=10");
+    const data = await response.json();
+
+    // TODO : Parcourir les données récupérées et les insérer dans la collection users
+    data.users.forEach(user => {
+      // Ajoutez chaque utilisateur au tableau avec addRow
+      addRow(user.firstName, user.lastName, user.email);
+    });
+  } catch (error) {
+    console.error("Erreur lors de la récupération des données :", error);
+  }
+}
